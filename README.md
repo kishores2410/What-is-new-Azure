@@ -2,11 +2,11 @@
 
 This project, "What's New in Azure", serves as an automated news updater for Azure services. It's designed to help developers, IT professionals, or anyone interested in Azure stay updated with the latest changes, updates, or announcements from Azure.
 
-The project uses a Python Azure Function that is triggered every 12 hours. It fetches updates from the Azure feed and posts them on Twitter, allowing followers on Twitter to get timely updates about Azure.
+The project uses a Python Azure Function that is triggered every 12 hours. It fetches updates from the Azure feed and posts them on Twitter, allowing followers on Twitter (X) to get timely updates about Azure.
 
 ## Connect on Twitter
 
-For more updates and information on Azure Services, follow on Twitter: [What is new in Azure](https://x.com/WhatsNewInAzure)
+For more updates and information on Azure Services, follow on Twitter (X): [What is new in Azure](https://x.com/WhatsNewInAzure)
 
 ## This can be particularly useful for:
 
@@ -18,11 +18,11 @@ Azure enthusiasts who want to stay in the loop about the latest Azure news and u
 
 ## Project Structure
 
-- `.env`: Contains environment variables such as the Azure feed URL, connection string for Azure Data Tables, and Twitter API keys.
+- `.env.example`: Contains environment variables such as the Azure feed URL, connection string for Azure Data Tables, and Twitter API keys.
 - `azure_client.py`: Contains the Azure client code.
 - `config.py`: Contains the configuration code.
 - `feed_processor.py`: Contains the main function that processes the Azure feed.
-- `function_app_1.py` and `function_app.py`: Contains the Azure Function App code.
+- `function_app.py`: Contains the Azure Function App code.
 - `twitter_client.py`: Contains the Twitter client code.
 - `azure-resource-manager-template.json`: Contains the Azure Resource Manager (ARM) template for deploying the resources needed for this project.
 - `.vscode/tasks.json`: Contains tasks for running the function app locally and installing the required Python packages.
